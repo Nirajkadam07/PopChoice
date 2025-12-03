@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Pop Choice</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/PopChoice Icon.png" alt="Icon of PopChoice which is popcorn cup looking at you with hope"
+            class="icon">
+        <h1 class="title">PopChoice</h1>
+    </header>
+
+    <main>
+        <form action="" class="input-form">
+            <label for="fav-movie">What's your favorite movie and why?</label>
+            <textarea id="fav-movie" name="fav-movie" required></textarea>
+
+            <label for="movie_timeframe">Are you in the mood for something new or classic?</label>
+            <textarea id="movie_timeframe" name="movie_timeframe" required></textarea>
+
+            <label for="movie_gener">Do you wanna have fun or do you want something serious?</label>
+            <textarea id="movie_gener" name="movie_gener" required></textarea>
+
+            <button class="btn" id="submit-btn">Let's Go</button>
+        </form>
+
+        <section class="loading-panel" id="loading-panel">
+            <img src="images/loader.svg" alt="loading timer" class="loader">
+            <p>Finding a perfect movie...</p>
+        </section>
+
+        <section class="result-section" id="result-section">
+            <h2 id="final-movie-title"></h2>
+            <p id="final-movie-desc"></p>
+            <button class="btn go-again-btn" id="go-again-btn">Go again</button>
+        </section>
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
